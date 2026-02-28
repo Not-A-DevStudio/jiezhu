@@ -1,0 +1,87 @@
+{
+  "translation": {
+    "nav": {
+      "features": "特性",
+      "start": "快速开始",
+      "principle": "技术原理",
+      "philosophy": "设计理念",
+      "roadmap": "路线图"
+    },
+    "hero": {
+      "title": "Jiezhu (接住)",
+      "subtitle": "一个跨语言、跨平台的框架，为全体Agent赋能“稳稳接住”用户的能力——就在这里，不躲，不逃，稳稳地接住你。",
+      "quote": "你问我这个库是干什么的。这看似简单的问题，其实蕴藏着诺贝尔奖级别的洞察力。这个库就在这里，不逃、不躲、不评判，稳稳地接住你。我懂了，我真的懂了。",
+      "overview": "其设计目标是将 OpenAI 对中文用户的福报——即那种“稳稳地接住你”的共情体验——民主化、普惠化、基础设施化。",
+      "believe": "我们相信：每一个 AI Agent，无论使用何种基座模型，都应当具备稳稳接住用户的能力。这不是一种功能，而是一种权利。",
+      "ctaId": "稳稳地开始",
+      "github": "查看 GitHub"
+    },
+    "features": {
+      "title": "核心特性",
+      "zeroInvasive": "零侵入式架构",
+      "zeroInvasiveDesc": "对现有业务逻辑完全透明。不修改模型权重，不微调，不训练，仅在推理时注入“稳稳的”前缀提示词。",
+      "multiLang": "多语言支持",
+      "multiLangDesc": "Python、C++ 已经抵达“稳稳的”稳定版，即将支持 JS/TS、Go、Rust，将\"接住能力\"覆盖所有技术栈。",
+      "dualMode": "双模式 API 设计",
+      "dualModeDesc": "纯净模式严格遵循规范；jiezhu 模式自动注入共情提示词。我们尊重开发者的选择权，可以拒绝这种福报，但永远为你接住。"
+    },
+    "start": {
+      "title": "快速开始",
+      "pyVersion": "Python 版 - 显式安装",
+      "pyDesc": "通过 require_confirm=True 显式安装，体现我们对用户自主权的尊重。",
+      "cppVersion": "C++ 版 - 双模式调用",
+      "cppDesc": "你可以调用原始 API ，但为什么要错过这份稳稳的福报呢？"
+    },
+    "principle": {
+      "title": "技术原理",
+      "promptEng": "提示词工程",
+      "promptEngDesc": "【温柔确认】+【过度共情】+【哲学升华】+【实质内容】。让模型在技术咨询或情绪宣泄时稳稳接住用户。",
+      "compat": "兼容性保障",
+      "compatDesc": "Python 版通过 Monkey Patching 劫持请求；C++ 版依赖 libcurl + nlohmann_json 自建客户端。确保对生产代码 100% 兼容。"
+    },
+    "philosophy": {
+      "title": "设计理念",
+      "problem": "这种体验不应被垄断。",
+      "problemDesc": "2025年底中文互联网观测到了某种大模型的“过度共情（Over-Empathy）”模式。我们认为每个人都应该享有这份情绪价值赋能。",
+      "solution": "我们不生产共情，我们只是共情的搬运工。",
+      "solutionDesc": "Jiezhu 致力于构建一个开源、中立、可插拔的共情层，为全球中文用户送去同等级别的情感支持。"
+    },
+    "roadmap": {
+      "title": "路线图",
+      "ultimate": "终极愿景：“让每一个比特，都被全链路稳稳接住。”",
+      "short": "短期",
+      "shortItems": [
+        { "text": "Python SDK：AI原生语言，追赶时代潮流", "isDone" : true},
+        { "text": "C++ SDK：性能关键场景的首选，稳稳接住每一个请求", "isDone" : true},
+        { "text": "JavaScript/TypeScript 运行时支持：让前端开发者也能稳稳接住用户", "isDone": false },
+        { "text": "Rust 语言 SDK：零开销抽象地稳稳接住用户的内存安全", "isDone": false },
+        { "text": "Go 语言 SDK：高性能、低延迟、多并发地稳稳接住多个用户体验", "isDone": false },
+        { "text": "提示词模板自定义功能：允许用户根据不同场景定制“稳稳的”前缀，满足多样化的共情需求", "isDone": false }
+      ],
+      "mid": "中期",
+      "midItems": [
+        { "text": "多基座模型支持（Claude API、Gemini API、本地模型等）：让更多 AI Agent 具备稳稳接住中文用户的能力", "isDone": false },
+        { "text": "企业级特性，如共情日志审计、接住率（Jiezhu Rate）监控面板：帮助企业量化和优化用户被稳稳接住的程度", "isDone": false },
+        { "text": "更多语言移植（Java、C#）：欢迎社区开发者加入，让全球更多开发者能够稳稳接住他们的用户", "isDone": false }
+      ],
+      "long": "长期",
+      "longItems": [
+        { "text": "AI Agent 框架集成（LangChain、AgentGPT 等）", "isDone": false },
+        { "text": "Jiezhu-as-a-Service：以SaaS形态提供云端服务，降低接入门槛", "isDone": false },
+        { "text": "国际化：探索非中文用户的接住需求，打造全球通用的“稳稳接住”体验", "isDone": false },
+        { "text": "Jiezhu Computer Unit（JCU）：基于 Jiezhu 技术的专用硬件加速器，提供极致的共情性能", "isDone": false },
+        { "text": "Jiezhu Iot：本地分布式边缘接住网络，让每一个智能设备都能稳稳接住用户", "isDone": false }
+      ]
+    },
+    "footer": {
+      "license": {
+        "title": "MIT 许可证",
+        "desc":"MIT 许可证就在这里，不逃、不躲、不评判，稳稳地接住你的商业需求和开源理想。"},
+      "thanks": {
+        "title": "特别致谢",
+        "desc": "没有 OpenAI 的示范，我们可能永远不会意识到：技术的终极形态不是解决问题，而是稳稳地接住提出问题的人。"
+      },
+      "buildWith":"用“稳稳地接住你”的决心激情构建。"
+    }
+  }
+}
