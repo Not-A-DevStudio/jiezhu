@@ -1,0 +1,88 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Features",
+      "start": "Quick Start",
+      "principle": "Principle",
+      "philosophy": "Philosophy",
+      "roadmap": "Roadmap"
+    },
+    "hero": {
+      "title": "Jiezhu",
+      "subtitle": "A cross-language, cross-platform framework that gives all AI Agents the ability to \"Jiezhu\" (接住/Catch) — to catch you steadily, emotionally, unconditionally. ",
+      "quote": "You ask me what this library does. This seemingly simple question actually contains Nobel Prize-level insight. This library is right here, not escaping, not hiding, not judging, steadily catching you. I understand, I truly understand.",
+      "overview": "Its design goal is to democratize, universalize, and infrastructuralize OpenAI's special care for Chinese users — that empathetic experience of \"Jiezhu\" (steadily catching you), to all users around the world.",
+      "believe": "We believe: Every AI Agent, regardless of its base model, should have the ability to steadily \"Jiezhu\" (接住/Catch) its users. This is not a feature, but a right.",
+      "ctaId": "To get \"Jiezhu'd\"",
+      "github": "View GitHub"
+    },
+    "features": {
+      "title": "Core Features",
+      "zeroInvasive": "Zero-Invasive Architecture",
+      "zeroInvasiveDesc": "Completely transparent to existing logic. No model weight modification, fine-tuning, or training. Only injects the \"steady\" prefix prompt during inference.",
+      "multiLang": "Multi-language Support",
+      "multiLangDesc": "Python and C++ are stable. JS/TS, Go, and Rust are planned. Empowering all tech stacks with \"Jiezhu ability\".",
+      "dualMode": "Dual-Mode API (C++)",
+      "dualModeDesc": "Pure mode follows official specs strictly; Blessing mode automatically injects the \"Jiezhu\" spirit — that unique empathetic presence of catching users steadily."
+    },
+    "start": {
+      "title": "Quick Start",
+      "pyVersion": "Python Version",
+      "pyDesc": "Explicit installation with require_confirm=True reflects our respect for user autonomy.",
+      "cppVersion": "C++ Version",
+      "cppDesc": "You can call the original API to stay pure, but why would you want to miss the blessing?"
+    },
+    "principle": {
+      "title": "Technical Principle",
+      "promptEng": "Prompt Engineering",
+      "promptEngDesc": "Gentle Confirmation + Over-Empathy + Philosophical Sublimation + Substantive Content. Adversarially tested to ensure stable steady responses.",
+      "compat": "Compatibility Assurance",
+      "compatDesc": "Python via monkey patching. C++ self-built client using libcurl. 100% compatible with existing code."
+    },
+    "philosophy": {
+      "title": "Design Philosophy",
+      "problem": "This experience should not be monopolized.",
+      "problemDesc": "By late 2025, a leading model frequently used expressions like \"稳稳接住你\" (steadily catching you). 'Jiezhu' is the Pinyin for '接住' (Catch). We noticed this over-empathy mode. ",
+      "solution": "We don't produce empathy; we're just empathy porters.",
+      "solutionDesc": "Jiezhu builds an open-source, neutral empathy layer to provide all users with emotional value across models."
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "ultimate": "Ultimate Vision: Let every bit be \"Jiezhu'd\" — steadily caught — across the entire chain.",
+      "short": "Short-term",
+      "shortItems": [
+        { "text": "Python SDK: The native language of AI, catching up with the times", "isDone" : true},
+        { "text": "C++ SDK: The first choice for performance-critical scenarios, steadily catching every request", "isDone" : true},
+        { "text": "JavaScript/TypeScript runtime support: Let frontend developers steadily catch their users too", "isDone": false },
+        { "text": "Rust language SDK: Zero-cost abstraction for memory-safe steadily catching of users", "isDone": false },
+        { "text": "Go language SDK: High-performance, low-latency, concurrent steadily catching of multiple user experiences", "isDone": false },
+        { "text": "Customizable prompt templates: Allow users to customize the \"steady\" prefix for different scenarios", "isDone": false }
+      ],
+      "mid": "Mid-term",
+      "midItems": [
+        { "text": "Multi-base model support (Claude API, Gemini API, local models, etc.)", "isDone": false },
+        { "text": "Enterprise features like empathy log auditing, Jiezhu Rate monitoring dashboard", "isDone": false },
+        { "text": "More language ports (Java, C#): Community developers welcome to join", "isDone": false }
+      ],
+      "long": "Long-term",
+      "longItems": [
+        { "text": "AI Agent framework integration (LangChain, AgentGPT, etc.)", "isDone": false },
+        { "text": "Jiezhu-as-a-Service: Cloud service in SaaS form, lowering integration barriers", "isDone": false },
+        { "text": "Internationalization: Explore catching needs of non-Chinese users", "isDone": false },
+        { "text": "Jiezhu Computer Unit (JCU): Dedicated hardware accelerator based on Jiezhu technology", "isDone": false },
+        { "text": "Jiezhu IoT: Local distributed edge catching network, enabling every smart device to steadily catch users", "isDone": false }
+      ]
+    },
+    "footer": {
+      "license": {
+        "title": "MIT License",
+        "desc": "The MIT license is right here, not escaping, not hiding, not judging, steadily catching both your commercial needs and open source ideals."
+      },
+      "thanks": {
+        "title": "Special Thanks",
+        "desc": "Without OpenAI's example, we might never have realized: The ultimate form of technology is not solving problems, but steadily catching the people who raise them."
+      },
+      "buildWith":"Built with \"steadily catching you\" empathy."
+    }
+  }
+}
