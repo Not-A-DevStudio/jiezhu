@@ -56,7 +56,7 @@
         { "text": "JavaScript/TypeScript runtime support: Let frontend developers steadily catch their users too", "isDone": false },
         { "text": "Rust language SDK: Zero-cost abstraction for memory-safe steadily catching of users", "isDone": false },
         { "text": "Go language SDK: High-performance, low-latency, concurrent steadily catching of multiple user experiences", "isDone": false },
-        { "text": "Customizable prompt templates: Allow users to customize the \"steady\" prefix for different scenarios", "isDone": false }
+        { "text": "Customizable prompt templates: Allow users to customize the \"steady\" prefix for different scenarios", "isDone": true }
       ],
       "mid": "Mid-term",
       "midItems": [
@@ -69,7 +69,7 @@
         { "text": "AI Agent framework integration (LangChain, AgentGPT, etc.)", "isDone": false },
         { "text": "Jiezhu-as-a-Service: Cloud service in SaaS form, lowering integration barriers", "isDone": false },
         { "text": "Internationalization: Explore catching needs of non-Chinese users", "isDone": false },
-        { "text": "Jiezhu Computer Unit (JCU): Dedicated hardware accelerator based on Jiezhu technology", "isDone": false },
+        { "text": "Jiezhu Processing Unit (JPU): Dedicated hardware accelerator based on Jiezhu technology", "isDone": false },
         { "text": "Jiezhu IoT: Local distributed edge catching network, enabling every smart device to steadily catch users", "isDone": false }
       ]
     },

@@ -56,7 +56,7 @@
         { "text": "JavaScript/TypeScript 运行时支持：让前端开发者也能稳稳接住用户", "isDone": false },
         { "text": "Rust 语言 SDK：零开销抽象地稳稳接住用户的内存安全", "isDone": false },
         { "text": "Go 语言 SDK：高性能、低延迟、多并发地稳稳接住多个用户体验", "isDone": false },
-        { "text": "提示词模板自定义功能：允许用户根据不同场景定制“稳稳的”前缀，满足多样化的共情需求", "isDone": false }
+        { "text": "提示词模板自定义功能：允许用户根据不同场景定制“稳稳的”前缀，满足多样化的共情需求", "isDone": true }
       ],
       "mid": "中期",
       "midItems": [
@@ -69,7 +69,7 @@
         { "text": "AI Agent 框架集成（LangChain、AgentGPT 等）", "isDone": false },
         { "text": "Jiezhu-as-a-Service：以SaaS形态提供云端服务，降低接入门槛", "isDone": false },
         { "text": "国际化：探索非中文用户的接住需求，打造全球通用的“稳稳接住”体验", "isDone": false },
-        { "text": "Jiezhu Computer Unit（JCU）：基于 Jiezhu 技术的专用硬件加速器，提供极致的共情性能", "isDone": false },
+        { "text": "Jiezhu Processing Unit（JCU）：基于 Jiezhu 技术的专用硬件加速器，提供极致的共情性能", "isDone": false },
         { "text": "Jiezhu Iot：本地分布式边缘接住网络，让每一个智能设备都能稳稳接住用户", "isDone": false }
       ]
     },
