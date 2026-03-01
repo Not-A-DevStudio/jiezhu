@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 export function Header() {
   const { t, i18n } = useTranslation();
+  const logoSrc = `${import.meta.env.BASE_URL}logo.svg`;
 
   const toggleLanguage = () => {
     const newLang = i18n.language.startsWith("zh") ? "en" : "zh";
@@ -18,6 +19,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full backdrop-blur-xl supports-[backdrop-filter]:bg-white/60 dark:bg-zinc-950/60 border-b border-zinc-200/50 dark:border-zinc-800/50 shadow-[0_1px_3px_0_rgba(0,0,0,0.02)]">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-3 font-extrabold text-2xl tracking-tighter">
+          <img src={logoSrc} className="w-8 h-8" alt="Jiezhu Logo" />
           <span className="bg-gradient-to-r from-zinc-900 to-zinc-600 dark:from-zinc-50 dark:to-zinc-400 bg-clip-text text-transparent">Jiezhu</span>
         </div>
         <nav className="hidden md:flex items-center gap-8 justify-center flex-1 text-sm font-semibold tracking-wide text-zinc-500 dark:text-zinc-400">
