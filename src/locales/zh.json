@@ -69,7 +69,7 @@
         { "text": "AI Agent 框架集成（LangChain、AgentGPT 等）", "isDone": false },
         { "text": "Jiezhu-as-a-Service：以SaaS形态提供云端服务，降低接入门槛", "isDone": false },
         { "text": "国际化：探索非中文用户的接住需求，打造全球通用的“稳稳接住”体验", "isDone": false },
-        { "text": "Jiezhu Processing Unit（JCU）：基于 Jiezhu 技术的专用硬件加速器，提供极致的共情性能", "isDone": false },
+        { "text": "Jiezhu Processing Unit（JPU）：基于 Jiezhu 技术的专用硬件加速器，提供极致的共情性能", "isDone": false },
         { "text": "Jiezhu Iot：本地分布式边缘接住网络，让每一个智能设备都能稳稳接住用户", "isDone": false }
       ]
     },
