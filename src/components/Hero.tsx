@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { ArrowRight, Github, Sparkles } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -27,7 +26,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
             </span>
-            <span className="font-medium mr-2">v0.2.0</span> <span className="opacity-80">available now</span>
+            <span className="font-medium mr-2">v0.1.1</span> <span className="opacity-80">available now</span>
           </motion.div>
 
           <motion.h1 
@@ -66,13 +65,6 @@ export function Hero() {
               {t("hero.ctaId")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <Link
-              to="/demo"
-              className="inline-flex h-14 items-center justify-center rounded-xl border-2 border-emerald-500/50 bg-emerald-500/10 dark:bg-emerald-500/20 px-8 text-base font-medium text-emerald-700 dark:text-emerald-300 hover:bg-emerald-500/20 dark:hover:bg-emerald-500/30 hover:border-emerald-500 transition-all hover:scale-105 shadow-[0_0_20px_rgba(16,185,129,0.15)]"
-            >
-              <Sparkles className="mr-2 h-5 w-5" />
-              {t("hero.demo", "Try Demo")}
-            </Link>
             <a
               href="https://github.com/Not-A-DevStudio/libjiezhu"
               target="_blank"

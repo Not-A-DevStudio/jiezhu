@@ -7,10 +7,10 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
   globalIgnores(['dist']),
-  js.configs.recommended,
+  ...js.configs.recommended,
   ...tseslint.configs.recommended,
-  reactHooks.configs.flat.recommended,
-  reactRefresh.configs.vite,
+  ...reactHooks.configs.flat.recommended,
+  ...reactRefresh.configs.vite,
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {

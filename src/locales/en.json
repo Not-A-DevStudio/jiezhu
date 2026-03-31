@@ -5,8 +5,7 @@
       "start": "Quick Start",
       "principle": "Principle",
       "philosophy": "Philosophy",
-      "roadmap": "Roadmap",
-      "home": "Back to Home"
+      "roadmap": "Roadmap"
     },
     "hero": {
       "title": "Jiezhu",
@@ -15,7 +14,6 @@
       "overview": "Its design goal is to democratize, universalize, and infrastructuralize OpenAI's special care for Chinese users — that empathetic experience of \"Jiezhu\" (steadily catching you), to all users around the world.",
       "believe": "We believe: Every AI Agent, regardless of its base model, should have the ability to steadily \"Jiezhu\" (接住/Catch) its users. This is not a feature, but a right.",
       "ctaId": "To get \"Jiezhu'd\"",
-      "demo": "Try Demo",
       "github": "View GitHub"
     },
     "features": {
@@ -62,7 +60,7 @@
       ],
       "mid": "Mid-term",
       "midItems": [
-        { "text": "[Anthropic API support OUT NOW] Multi-base model support (Claude API, Gemini API, local models, etc.)", "isDone": false },
+        { "text": "Multi-base model support (Claude API, Gemini API, local models, etc.)", "isDone": false },
         { "text": "Enterprise features like empathy log auditing, Jiezhu Rate monitoring dashboard", "isDone": false },
         { "text": "More language ports (Java, C#): Community developers welcome to join", "isDone": false }
       ],
@@ -85,29 +83,6 @@
         "desc": "Without OpenAI's example, we might never have realized: The ultimate form of technology is not solving problems, but steadily catching the people who raise them."
       },
       "buildWith":"Built with \"steadily catching you\" empathy."
-    },
-    "demo": {
-      "title": "Interactive Demo",
-      "subtitle": "Experience the \"Jiezhu\" (接住/Catch) capability directly in your browser. Configure the API key and endpoint as needed to try it out. We don't produce empathy; we're just empathy porters. We recommend using APIs from providers like OpenAI, DeepSeek, etc.",
-      "settings": "Configuration",
-      "endpoint": "API Endpoint",
-      "endpointDefault": "https://api.openai.com/v1",
-      "endpointPlaceholder": "Optional. e.g., https://api.openai.com/v1",
-      "apiKey": "API Key",
-      "apiKeyPlaceholder": "Optional, used for provider authentication",
-      "apiKeyReminder": "An API endpoint is set. Please provide the corresponding API key as well.",
-      "model": "Model",
-      "modelIgnoredReminder": "API key and endpoint are both empty, so the model name setting will not take effect.",
-      "modelPlaceholder": "e.g., gpt-4o-mini",
-      "chatArea": "Chat Interface",
-      "systemRole": "System Prompt",
-      "systemTemplate": "You are a helpful assistant. Please embody the \"Jiezhu\" (steadily catching you) spirit in your responses.",
-      "placeholder": "Type your message here... Press Enter to send",
-      "send": "Send",
-      "sending": "Catching...",
-      "clear": "Clear Chat",
-      "errorTitle": "Oops, failed to catch:",
-      "emptyChat": "Send a message to start experiencing the \"Jiezhu\" empathy layer."
     }
   }
 }
