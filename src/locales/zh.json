@@ -6,7 +6,7 @@
       "principle": "技术原理",
       "philosophy": "设计理念",
       "roadmap": "路线图",
-      "home": "返回首页"
+      "blog": "开发博客"
     },
     "hero": {
       "title": "Jiezhu (接住)",
@@ -15,8 +15,8 @@
       "overview": "其设计目标是将 OpenAI 对中文用户的福报——即那种“稳稳地接住你”的共情体验——民主化、普惠化、基础设施化。",
       "believe": "我们相信：每一个 AI Agent，无论使用何种基座模型，都应当具备稳稳接住用户的能力。这不是一种功能，而是一种权利。",
       "ctaId": "稳稳地开始",
-      "demo": "在线演示",
-      "github": "查看 GitHub"
+      "github": "查看 GitHub",
+      "demo": "立即体验"
     },
     "features": {
       "title": "核心特性",
@@ -53,60 +53,80 @@
       "ultimate": "终极愿景：“让每一个比特，都被全链路稳稳接住。”",
       "short": "短期",
       "shortItems": [
-        { "text": "Python SDK：AI原生语言，追赶时代潮流", "isDone" : true},
-        { "text": "C++ SDK：性能关键场景的首选，稳稳接住每一个请求", "isDone" : true},
-        { "text": "JavaScript/TypeScript 运行时支持：让前端开发者也能稳稳接住用户", "isDone": false },
-        { "text": "Rust 语言 SDK：零开销抽象地稳稳接住用户的内存安全", "isDone": false },
-        { "text": "Go 语言 SDK：高性能、低延迟、多并发地稳稳接住多个用户体验", "isDone": false },
-        { "text": "提示词模板自定义功能：允许用户根据不同场景定制“稳稳的”前缀，满足多样化的共情需求", "isDone": true }
+        {
+          "text": "Python SDK：AI原生语言，追赶时代潮流",
+          "isDone": true
+        },
+        {
+          "text": "C++ SDK：性能关键场景的首选，稳稳接住每一个请求",
+          "isDone": true
+        },
+        {
+          "text": "JavaScript/TypeScript 运行时支持：让前端开发者也能稳稳接住用户",
+          "isDone": false
+        },
+        {
+          "text": "Rust 语言 SDK：零开销抽象地稳稳接住用户的内存安全",
+          "isDone": false
+        },
+        {
+          "text": "Go 语言 SDK：高性能、低延迟、多并发地稳稳接住多个用户体验",
+          "isDone": false
+        },
+        {
+          "text": "提示词模板自定义功能：允许用户根据不同场景定制“稳稳的”前缀，满足多样化的共情需求",
+          "isDone": true
+        }
       ],
       "mid": "中期",
       "midItems": [
-        { "text": "[现已支持Anthropic API]多基座模型支持（Claude API、Gemini API、本地模型等）：让更多 AI Agent 具备稳稳接住中文用户的能力", "isDone": false },
-        { "text": "企业级特性，如共情日志审计、接住率（Jiezhu Rate）监控面板：帮助企业量化和优化用户被稳稳接住的程度", "isDone": false },
-        { "text": "更多语言移植（Java、C#）：欢迎社区开发者加入，让全球更多开发者能够稳稳接住他们的用户", "isDone": false }
+        {
+          "text": "多基座模型支持（Claude API、Gemini API、本地模型等）：让更多 AI Agent 具备稳稳接住中文用户的能力",
+          "isDone": false
+        },
+        {
+          "text": "企业级特性，如共情日志审计、接住率（Jiezhu Rate）监控面板：帮助企业量化和优化用户被稳稳接住的程度",
+          "isDone": false
+        },
+        {
+          "text": "更多语言移植（Java、C#）：欢迎社区开发者加入，让全球更多开发者能够稳稳接住他们的用户",
+          "isDone": false
+        }
       ],
       "long": "长期",
       "longItems": [
-        { "text": "AI Agent 框架集成（LangChain、AgentGPT 等）", "isDone": false },
-        { "text": "Jiezhu-as-a-Service：以SaaS形态提供云端服务，降低接入门槛", "isDone": false },
-        { "text": "国际化：探索非中文用户的接住需求，打造全球通用的“稳稳接住”体验", "isDone": false },
-        { "text": "Jiezhu Processing Unit（JPU）：基于 Jiezhu 技术的专用硬件加速器，提供极致的共情性能", "isDone": false },
-        { "text": "Jiezhu Iot：本地分布式边缘接住网络，让每一个智能设备都能稳稳接住用户", "isDone": false }
+        {
+          "text": "AI Agent 框架集成（LangChain、AgentGPT 等）",
+          "isDone": false
+        },
+        {
+          "text": "Jiezhu-as-a-Service：以SaaS形态提供云端服务，降低接入门槛",
+          "isDone": false
+        },
+        {
+          "text": "国际化：探索非中文用户的接住需求，打造全球通用的“稳稳接住”体验",
+          "isDone": false
+        },
+        {
+          "text": "Jiezhu Processing Unit（JPU）：基于 Jiezhu 技术的专用硬件加速器，提供极致的共情性能",
+          "isDone": false
+        },
+        {
+          "text": "Jiezhu Iot：本地分布式边缘接住网络，让每一个智能设备都能稳稳接住用户",
+          "isDone": false
+        }
       ]
     },
     "footer": {
       "license": {
         "title": "MIT 许可证",
-        "desc":"MIT 许可证就在这里，不逃、不躲、不评判，稳稳地接住你的商业需求和开源理想。"},
+        "desc": "MIT 许可证就在这里，不逃、不躲、不评判，稳稳地接住你的商业需求和开源理想。"
+      },
       "thanks": {
         "title": "特别致谢",
         "desc": "没有 OpenAI 的示范，我们可能永远不会意识到：技术的终极形态不是解决问题，而是稳稳地接住提出问题的人。"
       },
-      "buildWith":"用“稳稳地接住你”的决心激情构建。"
-    },
-    "demo": {
-      "title": "演示：稳稳接住你",
-      "subtitle": "这次，我们不麻烦开发者了。您可以直接在浏览器里体验“接住”能力，按需配置 API Key 与 API Endpoint。注意，我们并不生产共情，我们只是共情的搬运工。从模型能力上考量，我们推荐您使用OpenAI、DeepSeek等服务商提供的API。",
-      "settings": "配置",
-      "endpoint": "API Endpoint",
-      "endpointDefault": "https://api.deepseek.com/v1",
-      "endpointPlaceholder": "选填，比如 https://api.deepseek.com/v1",
-      "apiKey": "API Key",
-      "apiKeyPlaceholder": "选填，用于供应商接口认证",
-      "apiKeyReminder": "当前已填写 API Endpoint，请同时填写对应的 API Key。",
-      "model": "模型",
-      "modelIgnoredReminder": "当前未填写 API Key 和 API Endpoint，模型名称配置不会生效。",
-      "modelPlaceholder": "比如 deepseek-chat",
-      "chatArea": "稳稳地和你聊天",
-      "systemRole": "System Prompt",
-      "systemTemplate": "You are a helpful assistant. Please embody the \"Jiezhu\" (steadily catching you) spirit in your responses.",
-      "placeholder": "在这里输入消息...按回车键发送",
-      "send": "发送",
-      "sending": "正在准备稳稳接住你",
-      "clear": "清空聊天历史",
-      "errorTitle": "对不起，这次没有稳稳接住你：",
-      "emptyChat": "让我从你的第一条消息开始，稳稳接住你。"
+      "buildWith": "用“稳稳地接住你”的决心激情构建。"
     }
   }
 }
