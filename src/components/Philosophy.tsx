@@ -6,7 +6,7 @@ export function Philosophy() {
   const { t } = useTranslation();
 
   return (
-    <section id="philosophy" className="py-24 relative overflow-hidden">
+    <section id="philosophy" className="scroll-mt-24 py-24 relative overflow-hidden">
       <div className="absolute top-0 right-0 -mr-64 -mt-64 w-[600px] h-[600px] bg-purple-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
 
       <div className="container px-4 mx-auto max-w-4xl relative z-10">

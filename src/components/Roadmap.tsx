@@ -28,7 +28,7 @@ export function Roadmap() {
   };
 
   return (
-    <section id="roadmap" className="py-24 relative overflow-hidden">
+    <section id="roadmap" className="scroll-mt-24 py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-zinc-50/50 dark:bg-zinc-900/50 backdrop-blur-3xl -z-10 border-y border-zinc-200/50 dark:border-zinc-800/50"></div>
       
       <div className="container px-4 mx-auto max-w-4xl relative z-10">

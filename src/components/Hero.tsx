@@ -61,6 +61,10 @@ export function Hero() {
           >
             <a
               href="#start"
+              onClick={(event) => {
+                event.preventDefault();
+                document.getElementById("start")?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
               className="inline-flex h-14 items-center justify-center rounded-xl bg-zinc-900 dark:bg-zinc-50 px-8 text-base font-medium text-zinc-50 dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:ring-offset-2 dark:focus:ring-zinc-50 dark:focus:ring-offset-zinc-950 transition-all hover:scale-105 shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.1)]"
             >
               {t("hero.ctaId")}
@@ -71,7 +75,7 @@ export function Hero() {
               className="inline-flex h-14 items-center justify-center rounded-xl border-2 border-emerald-500/50 bg-emerald-500/10 dark:bg-emerald-500/20 px-8 text-base font-medium text-emerald-700 dark:text-emerald-300 hover:bg-emerald-500/20 dark:hover:bg-emerald-500/30 hover:border-emerald-500 transition-all hover:scale-105 shadow-[0_0_20px_rgba(16,185,129,0.15)]"
             >
               <Sparkles className="mr-2 h-5 w-5" />
-              {t("hero.demo", "Try Demo")}
+              {t("hero.demo")}
             </Link>
             <a
               href="https://github.com/Not-A-DevStudio/libjiezhu"
