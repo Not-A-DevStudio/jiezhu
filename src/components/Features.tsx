@@ -24,7 +24,7 @@ export function Features() {
   ];
 
   return (
-    <section id="features" className="py-24 relative">
+    <section id="features" className="scroll-mt-24 py-24 relative">
       <div className="absolute inset-0 bg-zinc-50/50 dark:bg-zinc-900/50 backdrop-blur-3xl -z-10"></div>
       <div className="container px-4 mx-auto relative z-10">
         <div className="text-center mb-20">

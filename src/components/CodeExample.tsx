@@ -5,7 +5,7 @@ export function CodeExample() {
   const { t } = useTranslation();
 
   return (
-    <section id="start" className="py-24 relative overflow-hidden">
+    <section id="start" className="scroll-mt-24 py-24 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
       
       <div className="container px-4 mx-auto max-w-6xl">

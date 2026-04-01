@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { Languages, Github } from "lucide-react";
-import { useEffect } from "react";
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export function Header() {
   const { t, i18n } = useTranslation();
-  const logoSrc = `${import.meta.env.BASE_URL}logo.svg`;
   const location = useLocation();
   const navigate = useNavigate();
+  const pendingSectionId = useRef<string | null>(null);
+  const logoSrc = `${import.meta.env.BASE_URL}logo.svg`;
 
   const toggleLanguage = () => {
     const newLang = i18n.language.startsWith("zh") ? "en" : "zh";
@@ -18,16 +19,31 @@ export function Header() {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    } else {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  useEffect(() => {
+    if (location.pathname !== "/" || !pendingSectionId.current) {
+      return;
     }
+
+    const sectionId = pendingSectionId.current;
+    pendingSectionId.current = null;
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  }, [location.pathname]);
+
+  const isHome = location.pathname === "/";
+
+  const goToSection = (sectionId: string) => {
+    if (isHome) {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+
+    pendingSectionId.current = sectionId;
+    navigate("/");
   };
 
   return (
@@ -38,11 +54,12 @@ export function Header() {
           <span className="bg-gradient-to-r from-zinc-900 to-zinc-600 dark:from-zinc-50 dark:to-zinc-400 bg-clip-text text-transparent">Jiezhu</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 justify-center flex-1 text-sm font-semibold tracking-wide text-zinc-500 dark:text-zinc-400">
-          <a href="#features" onClick={(e) => handleNavClick(e, 'features')} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors cursor-pointer">{t("nav.features")}</a>
-          <a href="#start" onClick={(e) => handleNavClick(e, 'start')} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors cursor-pointer">{t("nav.start")}</a>
-          <a href="#principle" onClick={(e) => handleNavClick(e, 'principle')} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors cursor-pointer">{t("nav.principle")}</a>
-          <a href="#philosophy" onClick={(e) => handleNavClick(e, 'philosophy')} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors cursor-pointer">{t("nav.philosophy")}</a>
-          <a href="#roadmap" onClick={(e) => handleNavClick(e, 'roadmap')} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors cursor-pointer">{t("nav.roadmap")}</a>
+          <button type="button" onClick={() => goToSection("features")} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.features")}</button>
+          <button type="button" onClick={() => goToSection("start")} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.start")}</button>
+          <button type="button" onClick={() => goToSection("principle")} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.principle")}</button>
+          <button type="button" onClick={() => goToSection("philosophy")} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.philosophy")}</button>
+          <button type="button" onClick={() => goToSection("roadmap")} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.roadmap")}</button>
+          <Link to="/blog" className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.blog")}</Link>
         </nav>
         <div className="flex items-center gap-3">
           <button
