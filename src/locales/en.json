@@ -126,6 +126,12 @@
         "desc": "Without OpenAI's example, we might never have realized: The ultimate form of technology is not solving problems, but steadily catching the people who raise them."
       },
       "buildWith": "Built with \"steadily catching you\" empathy."
+    },
+    "blog": {
+      "latest": "Latest Blog",
+      "description": "Explore our latest technical articles, changelogs, and development stories.",
+      "readMore": "Read more",
+      "viewAll": "View all blogs"
     }
   }
 }
