@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { useEffect, useState } from "react";
+import { useSearchParams, Link } from "react-router-dom";
 import { parseFrontmatter } from "../lib/markdown";
 
 const glob = import.meta.glob('../blog/*.md', { query: '?raw', import: 'default', eager: true });
@@ -15,8 +16,10 @@ interface BlogPost {
 
 export function Blog() {
   const { t } = useTranslation();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [selectedPostId, setSelectedPostId] = useState<string | null>(null);
+  const idFromUrl = searchParams.get("id");
+  const [selectedPostId, setSelectedPostId] = useState<string | null>(idFromUrl);
 
   useEffect(() => {
     const loadedPosts = Object.entries(glob).map(([path, content]) => {
@@ -31,10 +34,16 @@ export function Blog() {
     }).sort((a, b) => b.date.getTime() - a.date.getTime());
 
     setPosts(loadedPosts);
-    if (loadedPosts.length > 0) {
+    if (!idFromUrl && loadedPosts.length > 0) {
       setSelectedPostId(loadedPosts[0].id);
     }
   }, []);
+
+  useEffect(() => {
+    if (idFromUrl) {
+      setSelectedPostId(idFromUrl);
+    }
+  }, [idFromUrl]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,6 +56,12 @@ export function Blog() {
       {/* Sidebar navigation */}
       <div className="md:w-1/4">
         <div className="bg-white/40 dark:bg-zinc-900/40 backdrop-blur-xl border border-zinc-200/50 dark:border-zinc-800/50 rounded-2xl p-6 sticky top-24 shadow-sm">
+          <Link 
+            to="/" 
+            className="inline-flex items-center text-sm text-zinc-500 hover:text-emerald-500 transition-colors mb-6 font-medium"
+          >
+            ← 返回主页
+          </Link>
           <h2 className="text-xl font-bold mb-6 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-800 pb-2">
             {t("nav.blog")}
           </h2>
@@ -54,7 +69,11 @@ export function Blog() {
             {posts.map(post => (
               <li key={post.id}>
                 <button
-                  onClick={() => { setSelectedPostId(post.id); window.scrollTo(0, 0); }}
+                  onClick={() => { 
+                    setSelectedPostId(post.id); 
+                    setSearchParams({ id: post.id });
+                    window.scrollTo(0, 0); 
+                  }}
                   className={`text-left w-full transition-all duration-200 p-3 rounded-xl ${
                     selectedPostId === post.id 
                     ? 'bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 font-semibold shadow-sm' 
