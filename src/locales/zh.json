@@ -132,7 +132,8 @@
       "latest": "最新博客",
       "description": "探索我们最新的技术文章、更新日志和开发故事。",
       "readMore": "阅读全文",
-      "viewAll": "查看所有博客"
+      "viewAll": "查看所有博客",
+      "return": "返回首页"
     }
   }
 }

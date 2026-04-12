@@ -131,7 +131,8 @@
       "latest": "Latest Blog",
       "description": "Explore our latest technical articles, changelogs, and development stories.",
       "readMore": "Read more",
-      "viewAll": "View all blogs"
+      "viewAll": "View all blogs",
+      "return": "Return Home"
     }
   }
 }
