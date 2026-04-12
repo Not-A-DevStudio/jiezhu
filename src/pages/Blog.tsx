@@ -54,7 +54,7 @@ export function Blog() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-6xl relative z-10 flex flex-col md:flex-row gap-8">
       {/* Sidebar navigation */}
-      <div className="md:w-1/4">
+      <div className="md:w-1/4 shrink-0">
         <div className="bg-white/40 dark:bg-zinc-900/40 backdrop-blur-xl border border-zinc-200/50 dark:border-zinc-800/50 rounded-2xl p-6 sticky top-24 shadow-sm">
           <Link 
             to="/" 
@@ -94,7 +94,7 @@ export function Blog() {
       </div>
 
       {/* Main content */}
-      <div className="md:w-3/4">
+      <div className="md:w-3/4 min-w-0">
         <div className="mb-10 lg:pl-4">
           <h1 className="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl mb-6 text-center md:text-left transition-colors">
             {selectedPost?.attributes.title || t("nav.blog")}
