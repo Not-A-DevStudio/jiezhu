@@ -3,6 +3,7 @@ title: "2026年愚人节特供ai小说"
 author: "Not A DevStudio Team"
 date: "2026-04-01"
 tags: ["april_fool"]
+desc: "2026年愚人节特供：一个关于DBA、前端、后端、产品经理的热血混战（他们为什么打架？）"
 ---
 # Not A DevStudio 平时都在干什么？
 
