@@ -6,7 +6,9 @@
       "principle": "技术原理",
       "philosophy": "设计理念",
       "roadmap": "路线图",
-      "blog": "开发博客"
+      "blog": "开发博客",
+      "demo": "在线演示",
+      "tohome": "返回首页"
     },
     "hero": {
       "title": "Jiezhu (接住)",
@@ -128,12 +130,34 @@
       },
       "buildWith": "用“稳稳地接住你”的决心激情构建。"
     },
+    "demo": {
+      "title": "演示：稳稳接住你",
+      "subtitle": "这次，我们不麻烦开发者了。您可以直接在浏览器里体验“接住”能力，按需配置 API Key 与 API Endpoint。注意，我们并不生产共情，我们只是共情的搬运工。",
+      "settings": "配置",
+      "endpoint": "API Endpoint",
+      "endpointDefault": "https://api.deepseek.com/v1",
+      "endpointPlaceholder": "选填，比如 https://api.deepseek.com/v1",
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "选填，用于供应商接口认证",
+      "apiKeyReminder": "当前已填写 API Endpoint，请同时填写对应的 API Key。",
+      "model": "模型",
+      "modelIgnoredReminder": "当前未填写 API Key 和 API Endpoint，模型名称配置不会生效。",
+      "modelPlaceholder": "比如 deepseek-chat",
+      "chatArea": "稳稳地和你聊天",
+      "systemRole": "System Prompt",
+      "systemTemplate": "You are a helpful assistant. Please embody the \"Jiezhu\" (steadily catching you) spirit in your responses.",
+      "placeholder": "在这里输入消息...按回车键发送",
+      "send": "发送",
+      "sending": "正在准备稳稳接住你",
+      "clear": "清空聊天历史",
+      "errorTitle": "对不起，这次没有稳稳接住你：",
+      "emptyChat": "让我从你的第一条消息开始，稳稳接住你。"
+    },
     "blog": {
       "latest": "最新博客",
       "description": "探索我们最新的技术文章、更新日志和开发故事。",
       "readMore": "阅读全文",
-      "viewAll": "查看所有博客",
-      "return": "返回首页"
+      "viewAll": "查看所有博客"
     }
   }
 }

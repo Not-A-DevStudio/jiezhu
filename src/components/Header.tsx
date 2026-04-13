@@ -59,6 +59,7 @@ export function Header() {
           <button type="button" onClick={() => goToSection("principle")} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.principle")}</button>
           <button type="button" onClick={() => goToSection("philosophy")} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.philosophy")}</button>
           <button type="button" onClick={() => goToSection("roadmap")} className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.roadmap")}</button>
+          <Link to="/demo" className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.demo")}</Link>
           <Link to="/blog" className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors">{t("nav.blog")}</Link>
         </nav>
         <div className="flex items-center gap-3">
