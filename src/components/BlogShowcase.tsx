@@ -1,34 +1,34 @@
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { parseFrontmatter } from "../lib/markdown";
-
-const glob = import.meta.glob('../blog/*.md', { query: '?raw', import: 'default', eager: true });
-
-interface BlogPost {
-  id: string;
-  attributes: Record<string, any>;
-  body: string;
-  date: Date;
-}
+import { loadBlogPosts } from "../lib/blog";
+import type { BlogPost } from "../lib/blog";
 
 export function BlogShowcase() {
   const { t } = useTranslation();
   const [posts, setPosts] = useState<BlogPost[]>([]);
 
   useEffect(() => {
-    const loadedPosts = Object.entries(glob).map(([path, content]) => {
-      const id = path.split('/').pop()?.replace('.md', '') || '';
-      const { attributes, body } = parseFrontmatter(content as string);
-      return {
-        id,
-        attributes,
-        body,
-        date: new Date(attributes.date || 0)
-      };
-    }).sort((a, b) => b.date.getTime() - a.date.getTime()).slice(0, 3);
+    let isActive = true;
 
-    setPosts(loadedPosts);
+    const run = async () => {
+      try {
+        const loadedPosts = await loadBlogPosts(3);
+        if (isActive) {
+          setPosts(loadedPosts);
+        }
+      } catch {
+        if (isActive) {
+          setPosts([]);
+        }
+      }
+    };
+
+    void run();
+
+    return () => {
+      isActive = false;
+    };
   }, []);
 
   if (posts.length === 0) return null;
