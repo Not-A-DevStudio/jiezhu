@@ -5,9 +5,9 @@ date: "2026-04-13"
 tags: ["routing", "frontend", "react-router"]
 desc: "Jiezhu项目组在官网路由技术选型中的详细（并非）思路"
 ---
-# Jiezhu 你的路由设计：Hash、锚点与 Query
+# Jiezhu DevBlog #1 
 
-哈喽大家好，我是 Not A DevStudio 的前端开发阿K。今天想和大家聊聊我们 Jiezhu 官网的路由设计，主要涉及 HashRouter、锚点导航和 Query 参数这三个方面。
+哈喽大家好，我是 Not A DevStudio 的前端开发阿K。没想到我们 Jiezhu 作为一个纯后端项目（调用AI让它稳稳接住你），第一篇开发博客竟然是前端相关内容。那就借这个机会，和大家聊聊我们 Jiezhu 官网的路由设计，主要涉及 HashRouter、锚点导航和 Query 参数这三个方面。
 
 众所周知，路由设计对于一个前端项目来说非常重要，它直接影响到用户的导航体验和开发的便利性。我们在设计 Jiezhu 官网的路由时，考虑了很多因素，最终决定采用 HashRoute r来实现页面切换，同时结合锚点和 Query 参数来处理页面内的定位和状态管理。
 
