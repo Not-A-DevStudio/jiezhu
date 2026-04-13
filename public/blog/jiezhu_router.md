@@ -73,7 +73,7 @@ Uncaught TypeError: Failed to construct 'URL': Invalid URL
 回顾 Jiezhu 官网的路由设计，我们最终形成了三层清晰的技术选型思路：
 
 1. **站点级页面路由 —— HashRouter**  
-   选择 HashRouter 而非 BrowserRouter，核心原因是部署在静态托管平台（如 GitHub Pages）上，无需配置服务端重写规则即可避免刷新 404。虽然 URL 中会带有 `#`，但换来了稳定可靠的页面切换体验，属于“稳妥省事”的务实之选。
+   选择 HashRouter 而非 BrowserRouter，核心原因是Jiezhu官网部署在静态托管平台 GitHub Pages 上，使用 HashRouter 可以无需配置服务端重写规则，即可避免刷新 404。虽然 URL 中会带有 `#`，但换来了稳定可靠的页面切换体验，属于“稳妥省事”的务实之选。
 
 2. **首页内部区块跳转 —— 锚点 + 条件滚动**  
    放弃纯锚点链接（如 `/#features`），改为交互逻辑判断：若当前在首页则直接 `scrollIntoView`；若不在首页则先跳转首页，待页面渲染完成后再滚动到目标区块。这一方案解决了跨页面滚动失败的问题，也体现了“Do less”原则——不为不需要的功能（如直接通过 URL 访问首页某区块）增加复杂度。
