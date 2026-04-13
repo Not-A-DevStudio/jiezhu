@@ -141,7 +141,7 @@ export function Demo() {
         <div className="flex items-center mb-4">
           <Link to="/" className="inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">
             <ArrowLeft className="mr-1.5 h-4 w-4" />
-            {t("nav.home")}
+            {t("nav.tohome")}
           </Link>
         </div>
 

@@ -6,7 +6,9 @@
       "principle": "Principle",
       "philosophy": "Philosophy",
       "roadmap": "Roadmap",
-      "blog": "Dev Blog"
+      "blog": "Dev Blog",
+      "demo": "Demo",
+      "tohome": "Return Home"
     },
     "hero": {
       "title": "Jiezhu",
@@ -127,12 +129,34 @@
       },
       "buildWith": "Built with \"steadily catching you\" empathy."
     },
+    "demo": {
+      "title": "Interactive Demo",
+      "subtitle": "Experience the \"Jiezhu\" (接住/Catch) capability directly in your browser. Configure the API key and endpoint as needed to try it out. We don't produce empathy; we're just empathy porters.",
+      "settings": "Configuration",
+      "endpoint": "API Endpoint",
+      "endpointDefault": "https://api.openai.com/v1",
+      "endpointPlaceholder": "Optional. e.g., https://api.openai.com/v1",
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "Optional, used for provider authentication",
+      "apiKeyReminder": "An API endpoint is set. Please provide the corresponding API key as well.",
+      "model": "Model",
+      "modelIgnoredReminder": "API key and endpoint are both empty, so the model name setting will not take effect.",
+      "modelPlaceholder": "e.g., gpt-4o-mini",
+      "chatArea": "Chat Interface",
+      "systemRole": "System Prompt",
+      "systemTemplate": "You are a helpful assistant. Please embody the \"Jiezhu\" (steadily catching you) spirit in your responses.",
+      "placeholder": "Type your message here... Press Enter to send",
+      "send": "Send",
+      "sending": "Catching...",
+      "clear": "Clear Chat",
+      "errorTitle": "Oops, failed to catch:",
+      "emptyChat": "Send a message to start experiencing the \"Jiezhu\" empathy layer."
+    },
     "blog": {
       "latest": "Latest Blog",
       "description": "Explore our latest technical articles, changelogs, and development stories.",
       "readMore": "Read more",
-      "viewAll": "View all blogs",
-      "return": "Return Home"
+      "viewAll": "View all blogs"
     }
   }
 }

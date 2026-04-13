@@ -70,7 +70,7 @@ export function Blog() {
             to="/" 
             className="inline-flex items-center text-sm text-zinc-500 hover:text-emerald-500 transition-colors mb-6 font-medium"
           >
-            ← {t('blog.return')}
+            ← {t('nav.tohome')}
           </Link>
           <h2 className="text-xl font-bold mb-6 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-800 pb-2">
             {t("nav.blog")}
