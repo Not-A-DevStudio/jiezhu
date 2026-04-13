@@ -3,40 +3,50 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { useEffect, useState } from "react";
 import { useSearchParams, Link } from "react-router-dom";
-import { parseFrontmatter } from "../lib/markdown";
-
-const glob = import.meta.glob('../blog/*.md', { query: '?raw', import: 'default', eager: true });
-
-interface BlogPost {
-  id: string;
-  attributes: Record<string, any>;
-  body: string;
-  date: Date;
-}
+import { loadBlogPosts } from "../lib/blog";
+import type { BlogPost } from "../lib/blog";
 
 export function Blog() {
   const { t } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const idFromUrl = searchParams.get("id");
   const [selectedPostId, setSelectedPostId] = useState<string | null>(idFromUrl);
 
   useEffect(() => {
-    const loadedPosts = Object.entries(glob).map(([path, content]) => {
-      const id = path.split('/').pop()?.replace('.md', '') || '';
-      const { attributes, body } = parseFrontmatter(content as string);
-      return {
-        id,
-        attributes,
-        body,
-        date: new Date(attributes.date || 0)
-      };
-    }).sort((a, b) => b.date.getTime() - a.date.getTime());
+    let isActive = true;
 
-    setPosts(loadedPosts);
-    if (!idFromUrl && loadedPosts.length > 0) {
-      setSelectedPostId(loadedPosts[0].id);
-    }
+    const run = async () => {
+      try {
+        setIsLoading(true);
+        setLoadError(null);
+
+        const loadedPosts = await loadBlogPosts();
+
+        if (!isActive) return;
+
+        setPosts(loadedPosts);
+        if (!idFromUrl && loadedPosts.length > 0) {
+          setSelectedPostId(loadedPosts[0].id);
+        }
+      } catch (error) {
+        if (!isActive) return;
+
+        setLoadError(error instanceof Error ? error.message : "Failed to load blog posts");
+      } finally {
+        if (isActive) {
+          setIsLoading(false);
+        }
+      }
+    };
+
+    void run();
+
+    return () => {
+      isActive = false;
+    };
   }, []);
 
   useEffect(() => {
@@ -115,15 +125,23 @@ export function Blog() {
         </div>
         
         <div className="bg-white/60 dark:bg-zinc-900/60 backdrop-blur-2xl border border-zinc-200/50 dark:border-zinc-800/50 rounded-3xl p-6 md:p-12 shadow-md min-h-[500px] transition-all">
-          {selectedPost ? (
+          {loadError ? (
+            <div className="flex items-center justify-center h-full text-red-500">
+              {loadError}
+            </div>
+          ) : isLoading ? (
+            <div className="flex items-center justify-center h-full text-zinc-500 animate-pulse">
+              Loading...
+            </div>
+          ) : selectedPost ? (
             <article className="prose prose-zinc dark:prose-invert prose-emerald max-w-none prose-headings:font-bold prose-a:text-emerald-500 hover:prose-a:text-emerald-600 prose-img:rounded-xl">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {selectedPost.body}
               </ReactMarkdown>
             </article>
           ) : (
-            <div className="flex items-center justify-center h-full text-zinc-500 animate-pulse">
-              Loading...
+            <div className="flex items-center justify-center h-full text-zinc-500">
+              No posts found
             </div>
           )}
         </div>
