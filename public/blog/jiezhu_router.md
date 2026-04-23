@@ -1,11 +1,11 @@
 ---
-title: "Jiezhu 你的路由设计：Hash、锚点与 Query"
+title: "Jiezhu DevBlog #1：官网路由设计思路"
 author: "Not A DevStudio 阿K"
 date: "2026-04-13"
 tags: ["routing", "frontend", "react-router"]
 desc: "Jiezhu项目组在官网路由技术选型中的详细（并非）思路"
 ---
-# Jiezhu DevBlog #1 
+# Jiezhu 你的路由设计：Hash、锚点与 Query
 
 哈喽大家好，我是 Not A DevStudio 的前端开发阿K。没想到我们 Jiezhu 作为一个纯后端项目（调用AI让它稳稳接住你），第一篇开发博客竟然是前端相关内容。那就借这个机会，和大家聊聊我们 Jiezhu 官网的路由设计，主要涉及 HashRouter、锚点导航和 Query 参数这三个方面。
 
