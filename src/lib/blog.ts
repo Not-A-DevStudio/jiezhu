@@ -36,9 +36,8 @@ async function readBlogManifest() {
 
 export async function loadBlogPosts(limit?: number) {
   const fileNames = await readBlogManifest();
-  const selectedFileNames = typeof limit === "number" ? fileNames.slice(0, limit) : fileNames;
   const posts = await Promise.all(
-    selectedFileNames.map(async fileName => {
+    fileNames.map(async fileName => {
       const response = await fetch(buildBlogPostUrl(fileName), { cache: "no-cache" });
 
       if (!response.ok) {
@@ -57,5 +56,7 @@ export async function loadBlogPosts(limit?: number) {
     })
   );
 
-  return posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+  const sortedPosts = posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+
+  return typeof limit === "number" ? sortedPosts.slice(0, limit) : sortedPosts;
 }

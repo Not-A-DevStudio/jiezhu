@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { loadBlogPosts } from "../lib/blog";
-import type { BlogPost } from "../lib/blog";
+import { loadBlogPosts , type BlogPost } from "../lib/blog";
 
 export function BlogShowcase() {
   const { t } = useTranslation();
