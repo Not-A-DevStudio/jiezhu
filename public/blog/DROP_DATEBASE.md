@@ -1,3 +1,10 @@
+---
+title: "【外部】P0事故报告"
+author: "Not A DevStudio 大刘"
+date: "2026-04-29"
+tags: ["incident_report", "database", "p0"]
+desc: "Not A DevStudio 作为第三方出具的 P0 事故报告。"
+---
 # 2026年4月28日 P0 级事故报告
 
 ## 事故概述
