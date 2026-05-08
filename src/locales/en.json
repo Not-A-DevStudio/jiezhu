@@ -120,8 +120,14 @@
     },
     "footer": {
       "license": {
+        "badge": "License",
         "title": "MIT License",
-        "desc": "The MIT license is right here, not escaping, not hiding, not judging, steadily catching both your commercial needs and open source ideals."
+        "desc": "libjiezhu is MIT licensed — The MIT license is right here, not escaping, not hiding, not judging, steadily catching your commercial needs and open-source ideals."
+      },
+      "contact": {
+        "title": "Contact",
+        "desc": "Get in touch with Not A DevStudio.",
+        "email": "Email: "
       },
       "thanks": {
         "title": "Special Thanks",
