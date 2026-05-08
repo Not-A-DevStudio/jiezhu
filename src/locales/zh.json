@@ -121,8 +121,14 @@
     },
     "footer": {
       "license": {
-        "title": "MIT 许可证",
-        "desc": "MIT 许可证就在这里，不逃、不躲、不评判，稳稳地接住你的商业需求和开源理想。"
+        "badge": "许可证",
+        "title": "MIT",
+        "desc": "libjiezhu 采用 MIT 许可证 —— MIT 许可就在这里，不躲，不逃，稳稳地接住你的商业需求与开源理想。"
+      },
+      "contact": {
+        "title": "联系方式",
+        "desc": "联系 Not A DevStudio。",
+        "email": "邮箱："
       },
       "thanks": {
         "title": "特别致谢",

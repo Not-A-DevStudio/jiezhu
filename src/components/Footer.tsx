@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Heart } from "lucide-react";
+import { Heart, Mail } from "lucide-react";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="py-12 border-t border-zinc-200/50 dark:border-zinc-800/50 bg-white/50 backdrop-blur-xl dark:bg-zinc-950/50 relative z-10">
       <div className="container px-4 mx-auto max-w-5xl">
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-4 flex items-center gap-2">
               {t("footer.license.title")} 
@@ -23,6 +23,21 @@ export function Footer() {
             <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
               {t("footer.thanks.desc")}
             </p>
+          </div>
+          <div>
+            <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-4 flex items-center gap-2">
+              {t("footer.contact.title")}
+              <Mail className="text-emerald-500" size={18} />
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-2">
+              {t("footer.contact.desc")}
+            </p>
+            <a
+              href="mailto:zeng-fan-yu@outlook.com"
+              className="text-sm text-emerald-600 dark:text-emerald-400 hover:underline leading-relaxed"
+            >
+              {t('footer.contact.email')}zeng-fan-yu@outlook.com
+            </a>
           </div>
         </div>
         <div className="pt-8 border-t border-zinc-200 dark:border-zinc-800 text-center text-sm text-zinc-500">
