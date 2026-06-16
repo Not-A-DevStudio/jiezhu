@@ -47,7 +47,7 @@ export function Blog() {
     return () => {
       isActive = false;
     };
-  }, []);
+  }, [idFromUrl]);
 
   useEffect(() => {
     if (idFromUrl) {
@@ -120,6 +120,16 @@ export function Blog() {
                   ✍️ {selectedPost.attributes.author}
                 </span>
               )}
+            </div>
+          )}
+          {selectedPost?.attributes.desc && (
+            <div className="mt-5 rounded-2xl border border-zinc-200/50 dark:border-zinc-700/50 bg-white/70 dark:bg-zinc-800/70 backdrop-blur-lg shadow-sm">
+              <div className="flex gap-3 px-5 py-4">
+                <span className="mt-1 shrink-0 text-2xl leading-none text-emerald-500/60 select-none" aria-hidden="true">“</span>
+                <p className="text-base md:text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  {selectedPost.attributes.desc}
+                </p>
+              </div>
             </div>
           )}
         </div>

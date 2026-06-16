@@ -8,6 +8,9 @@
       "roadmap": "Roadmap",
       "blog": "Dev Blog",
       "demo": "Demo",
+      "docs": "Docs",
+      "github": "GitHub",
+      "toggleLang": "中文",
       "tohome": "Return Home"
     },
     "hero": {
