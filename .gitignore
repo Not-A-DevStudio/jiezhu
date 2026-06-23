@@ -27,3 +27,4 @@ dist-ssr
 .env
 /workers/
 /public/blog/index.json
+/public/blog/_*.md

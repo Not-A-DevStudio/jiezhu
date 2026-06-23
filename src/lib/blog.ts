@@ -2,7 +2,7 @@ import { parseFrontmatter } from "./markdown";
 
 export interface BlogPost {
   id: string;
-  attributes: Record<string, any>;
+  attributes: Record<string, string>;
   body: string;
   date: Date;
 }

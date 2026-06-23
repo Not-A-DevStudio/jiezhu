@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Languages, Github } from "lucide-react";
+import { Languages, Github, BookOpen } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -67,16 +67,25 @@ export function Header() {
             onClick={toggleLanguage}
             className="p-2.5 text-zinc-500 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-all rounded-xl hover:bg-emerald-50 dark:hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 active:scale-95"
             aria-label="Toggle language"
-            title="Toggle Language"
+            title={t("nav.toggleLang")}
           >
             <Languages size={20} />
           </button>
+          <a
+            href="https://not-a-devstudio.github.io/libjiezhu"
+            target="_blank"
+            rel="noreferrer"
+            className="p-2.5 text-zinc-500 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-all rounded-xl hover:bg-emerald-50 dark:hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 active:scale-95"
+            title={t("nav.docs")}
+          >
+            <BookOpen size={20} />
+          </a>
           <a
             href="https://github.com/Not-A-DevStudio/libjiezhu"
             target="_blank"
             rel="noreferrer"
             className="p-2.5 text-zinc-500 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-all rounded-xl hover:bg-emerald-50 dark:hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 active:scale-95"
-            title="GitHub"
+            title={t("nav.github")}
           >
             <Github size={20} />
           </a>
