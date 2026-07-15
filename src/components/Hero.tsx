@@ -2,9 +2,11 @@ import { useTranslation } from "react-i18next";
 import { ArrowRight, Github, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useLatestVersion } from "../lib/useLatestVersion";
 
 export function Hero() {
   const { t } = useTranslation();
+  const version = useLatestVersion("not-a-devstudio", "libjiezhu");
 
   return (
     <section className="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24">
@@ -27,7 +29,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
             </span>
-            <span className="font-medium mr-2">v0.2.0</span> <span className="opacity-80">available now</span>
+            {version && <span className="font-medium mr-2">{version}</span>} <span className="opacity-80">available now</span>
           </motion.div>
 
           <motion.h1 
